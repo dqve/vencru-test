@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+// Prop Type definition interface
 
 export interface Props {
     className: string
@@ -11,8 +12,10 @@ export interface Props {
 
 export default function CheckBoxGroup(props:Props) {
 
+    // destructuring props
     const {className, image, mainText, subText} = props
 
+    // Checked state definition
     const [state, setState] = useState(false)
 
     return (

@@ -5,9 +5,11 @@ import Sidebar from '../SideBar'
 
 export default function MobileHeader() {
 
+    // state for controlling menu visibility
     const [state, setState] = useState(false)
 
     return (
+        // Mobile menu and header UI
         <>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 md:hidden">
                 <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
