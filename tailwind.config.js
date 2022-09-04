@@ -24,7 +24,10 @@ module.exports = {
       'purple-700': '#7F56D9',
       'purple-500': '#AD8AFF',
       'purple-300': '#D6BBFB',
-      'purple-30': '#F4EBFF'
+      'purple-30': '#F4EBFF',
+      'rose-700': '#be123c',
+      'rose-200': '#fecdd3',
+      
     },
     screens: {
       'xxs': '475px',
