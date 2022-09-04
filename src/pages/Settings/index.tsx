@@ -16,6 +16,7 @@ import { useSelector } from 'react-redux'
 
 export default function Settings() {
 
+    // Reading invoice history data from the redux store
     const history = useSelector((state: RootState) => state.userData.user.history)
 
 

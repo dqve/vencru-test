@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// Importing Provider from react-redux and store from ./redux/store 👇 
+// Importing Provider from react-redux and store from ./redux/store 
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 
@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     
-    {/* Provide the store as prop 👇 */}
+    {/* Providing the store as prop */}
     <Provider store={store}>
       <App />
     </Provider>

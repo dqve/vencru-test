@@ -146,12 +146,12 @@ export const dataSlice = createSlice({
   name: 'dataSlice',
   initialState,
   reducers: {
-    // 👇 Reset the user's data by returning the initial state
+    // Reset the user's data by returning the initial state
     logout: () => initialState,
 
     // Update Data
-    updateData: (state, action: PayloadAction<DataState>) => {
-      state.user = action.payload.user;
+    updateData: (state, action: PayloadAction<any>) => {
+      state.user.users = action.payload;
     },
 
     updateActiveUser: (state, action: PayloadAction<string>) => {
@@ -161,5 +161,5 @@ export const dataSlice = createSlice({
 });
 
 export const { logout, updateData, updateActiveUser } = dataSlice.actions;
-// 👇 Export the dataSlice.reducer to be included in the store.
+// Export the dataSlice.reducer to be included in the store.
 export default dataSlice.reducer;

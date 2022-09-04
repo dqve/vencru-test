@@ -18,10 +18,12 @@ import { useSelector} from 'react-redux'
 
 const Sidebar = () => {
 
+    // Reading user and 'active user' data from the redux store
     const users = useSelector((state: RootState)=> state.userData.user.users)
     const activeUser = useSelector((state: RootState)=> state.userData.user.activeUser)
 
     return (
+        // Sidebar UI Component
         <div className='fixed h-screen bg-white font-inter md:w-[280px] w-full xxs:w-2/3 sm:1/3 border-solid border-r-[1px] overflow-auto h-full scrollbar-hide'>
             <div className='p-6 flex flex-col justify-between h-full'>
                 <div>
