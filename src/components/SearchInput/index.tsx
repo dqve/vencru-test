@@ -3,7 +3,15 @@ import avatar from '../../assets/images/icons/search.svg'
 import { ReactComponent as Search } from '../../assets/images/icons/search.svg'
 import { ReactComponent as Tick } from '../../assets/images/icons/tick.svg'
 
-const SearchBar = ({ users }) => {
+
+export interface Props {
+  users: any[]
+}
+
+
+const SearchBar = ( props:Props ) => {
+
+  const { users } = props
 
   const [state, setState] = useState(false)
 
@@ -16,10 +24,10 @@ const SearchBar = ({ users }) => {
       </div>
 
 
-      <div className={` ${state ? "block" : "hidden"} absolute  mt-2 w-full origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`} role="menu"   tabIndex="-1">
+      <div className={` ${state ? "block" : "hidden"} absolute  mt-2 w-full origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`} role="menu" tabIndex={-1}>
         <div className="py-1" role="none">
           {users ? users.map((each, key) =>
-            <a key={key} href="#" className="text-gray-700 block px-4 py-2 hover:bg-grey hover:py-2 hover:px-4text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">
+            <a key={key} href="#" className="text-gray-700 block px-4 py-2 hover:bg-grey hover:py-2 hover:px-4text-sm" role="menuitem" tabIndex={-1} id="menu-item-0">
               <div className="flex items-center">
                 <span className="font-normal ml-3 block truncate">{each.name}</span>
                 {each.active ?
@@ -32,7 +40,7 @@ const SearchBar = ({ users }) => {
             </a>
           )
             :
-            <a href="#" className="text-gray-700 block px-4 py-2 hover:bg-grey hover:py-2 hover:px-4text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">
+            <a href="#" className="text-gray-700 block px-4 py-2 hover:bg-grey hover:py-2 hover:px-4text-sm" role="menuitem" tabIndex={-1} id="menu-item-0">
               <div className="flex items-center justify-center">
                 <span className="font-normal ml-3 block truncate">No results found</span>
               </div>

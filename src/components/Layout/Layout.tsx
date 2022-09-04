@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import Sidebar from '../SideBar/index.jsx'
+import React, { ReactElement } from 'react'
+import Sidebar from '../SideBar'
 import MobileHeader from '../MobileHeader'
 
 export interface Props {
-    children: any
+    children: ReactElement
 }
 
 export default function Layout(props: Props) {
   return (
-    <div id='wrapper'>
-                <div id='sidebar' className='relative max-w-[280px] hidden md:block'>
+    <div id='wrapper' className='bg-grey h-full'>
+                <div id='sidebar' className='relative max-w-[280px] hidden md:block  h-full'>
                     <Sidebar/>
                 </div>
-                <div id='main' className='md:ml-72'>
+                <div id='main' className='md:ml-72 w-auto h-full'>
                     <MobileHeader/>
                     {props.children}
                 </div>

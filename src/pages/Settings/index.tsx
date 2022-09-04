@@ -129,533 +129,535 @@ export default function Settings() {
 
                 <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                     <DefaultTable>
-                        <thead>
-                            <tr>
-                                <th
-                                    className="px-5 py-3 border-b border-grey-200 bg-grey text-left text-xs text-center font-semibold text-grey-500 tracking-wider"
-                                >
-                                    <div className="flex">
-                                        <div className="flex-shrink-0 h-4 w-4">
-                                            <input
-                                                id="comments"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500 checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700
+                        <>
+                            <thead>
+                                <tr>
+                                    <th
+                                        className="px-5 py-3 border-b border-grey-200 bg-grey text-left text-xs text-center font-semibold text-grey-500 tracking-wider"
+                                    >
+                                        <div className="flex">
+                                            <div className="flex-shrink-0 h-4 w-4">
+                                                <input
+                                                    id="comments"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500 checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700
                                     focus:bg-purple-300 "
+                                                />
+                                            </div>
+                                            <div className="ml-3 flex">
+                                                <span className="">Invoice</span><ArrowDown />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th
+                                        className="px-5 py-3 border-b border-grey-200 bg-grey text-left text-xs text-center font-semibold text-grey-500 tracking-wider"
+                                    >
+                                        Amount
+                                    </th>
+                                    <th
+                                        className="px-5 py-3 border-b border-grey-200 bg-grey text-left text-xs text-center font-semibold text-grey-500 tracking-wider"
+                                    >
+                                        Date
+                                    </th>
+                                    <th
+                                        className="px-5 py-3 border-b border-grey-200 bg-grey text-left text-xs text-center font-semibold text-grey-500 tracking-wider"
+                                    >
+                                        Status
+                                    </th>
+                                    <th
+                                        className="px-2 py-3  min-w-max border-b border-grey-200 bg-grey text-left text-xs font-semibold text-grey-500 tracking-wider"
+                                    >
+                                        Users on plan
+                                    </th>
+                                    <th
+                                        className="pr-5 pl-1 py-5 border-b border-grey-200 text-center bg-grey"
+                                    ></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
+                                        <div className="flex">
+                                            <div className="flex-shrink-0 h-4 w-4">
+                                                <input
+                                                    id="comments"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                                />
+                                            </div>
+                                            <div className="ml-3 w-max">
+                                                <p className="text-grey-900 font-medium whitespace-no-wrap">
+                                                    Basic Plan - Dec 2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">Dec 1, 2022</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
+                                        <div
+                                            className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                        >
+                                            <CheckIcon />
+                                            <span className="relative pl-1"> Paid</span>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
+                                        <div className="flex -space-x-1  min-w-max overflow-hidden">
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <div className='rounded-full w-6 h-6 bg-grey ring-2 ring-white inline-block flex items-center justify-center'>
+                                                <span className='text-grey-600 text-sm font-semibold text-center'>+2</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td
+                                        className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
+                                    >
+                                        <button
+                                            type="button"
+                                            className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
+                                        >
+                                            <span><Download /></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
+                                        <div className="flex">
+                                            <div className="flex-shrink-0 h-4 w-4">
+                                                <input
+                                                    id="comments"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                                />
+                                            </div>
+                                            <div className="ml-3 w-max">
+                                                <p className="text-grey-900 font-medium whitespace-no-wrap">
+                                                    Basic Plan - Nov 2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">Nov 1, 2022</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
+                                        <div
+                                            className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                        >
+                                            <CheckIcon />
+                                            <span className="relative pl-1"> Paid</span>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
+                                        <div className="flex -space-x-1  min-w-max overflow-hidden">
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <div className='rounded-full w-6 h-6 bg-grey ring-2 ring-white inline-block flex items-center justify-center'>
+                                                <span className='text-grey-600 text-sm font-semibold text-center'>+1</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td
+                                        className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
+                                    >
+                                        <button
+                                            type="button"
+                                            className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
+                                        >
+                                            <span><Download /></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
+                                        <div className="flex">
+                                            <div className="flex-shrink-0 h-4 w-4">
+                                                <input
+                                                    id="comments"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                                />
+                                            </div>
+                                            <div className="ml-3 w-max">
+                                                <p className="text-grey-900 font-medium whitespace-no-wrap">
+                                                    Basic Plan - Oct 2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">Oct 1, 2022</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
+                                        <div
+                                            className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                        >
+                                            <CheckIcon />
+                                            <span className="relative pl-1"> Paid</span>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
+                                        <div className="flex -space-x-1  min-w-max overflow-hidden">
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
                                             />
                                         </div>
-                                        <div className="ml-3 flex">
-                                            <span className="">Invoice</span><ArrowDown />
+                                    </td>
+                                    <td
+                                        className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
+                                    >
+                                        <button
+                                            type="button"
+                                            className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
+                                        >
+                                            <span><Download /></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
+                                        <div className="flex">
+                                            <div className="flex-shrink-0 h-4 w-4">
+                                                <input
+                                                    id="comments"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                                />
+                                            </div>
+                                            <div className="ml-3 w-max">
+                                                <p className="text-grey-900 font-medium whitespace-no-wrap">
+                                                    Basic Plan - Sept 2022
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </th>
-                                <th
-                                    className="px-5 py-3 border-b border-grey-200 bg-grey text-left text-xs text-center font-semibold text-grey-500 tracking-wider"
-                                >
-                                    Amount
-                                </th>
-                                <th
-                                    className="px-5 py-3 border-b border-grey-200 bg-grey text-left text-xs text-center font-semibold text-grey-500 tracking-wider"
-                                >
-                                    Date
-                                </th>
-                                <th
-                                    className="px-5 py-3 border-b border-grey-200 bg-grey text-left text-xs text-center font-semibold text-grey-500 tracking-wider"
-                                >
-                                    Status
-                                </th>
-                                <th
-                                    className="px-2 py-3  min-w-max border-b border-grey-200 bg-grey text-left text-xs font-semibold text-grey-500 tracking-wider"
-                                >
-                                    Users on plan
-                                </th>
-                                <th
-                                    className="pr-5 pl-1 py-5 border-b border-grey-200 text-center bg-grey"
-                                ></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
-                                    <div className="flex">
-                                        <div className="flex-shrink-0 h-4 w-4">
-                                            <input
-                                                id="comments"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                    </td>
+                                    <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">Sept 1, 2022</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
+                                        <div
+                                            className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                        >
+                                            <CheckIcon />
+                                            <span className="relative pl-1"> Paid</span>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
+                                        <div className="flex -space-x-1  min-w-max overflow-hidden">
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
                                             />
                                         </div>
-                                        <div className="ml-3 w-max">
-                                            <p className="text-grey-900 font-medium whitespace-no-wrap">
-                                                Basic Plan - Dec 2022
-                                            </p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">Dec 1, 2022</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
-                                    <div
-                                        className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                    </td>
+                                    <td
+                                        className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
                                     >
-                                        <CheckIcon />
-                                        <span className="relative pl-1"> Paid</span>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
-                                    <div className="flex -space-x-1  min-w-max overflow-hidden">
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <div className='rounded-full w-6 h-6 bg-grey ring-2 ring-white inline-block flex items-center justify-center'>
-                                            <span className='text-grey-600 text-sm font-semibold text-center'>+2</span>
+                                        <button
+                                            type="button"
+                                            className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
+                                        >
+                                            <span><Download /></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
+                                        <div className="flex">
+                                            <div className="flex-shrink-0 h-4 w-4">
+                                                <input
+                                                    id="comments"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                                />
+                                            </div>
+                                            <div className="ml-3 w-max">
+                                                <p className="text-grey-900 font-medium whitespace-no-wrap">
+                                                    Basic Plan - Aug 2022
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td
-                                    className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
-                                >
-                                    <button
-                                        type="button"
-                                        className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
-                                    >
-                                        <span><Download /></span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
-                                    <div className="flex">
-                                        <div className="flex-shrink-0 h-4 w-4">
-                                            <input
-                                                id="comments"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                    </td>
+                                    <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">Aug 1, 2022</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
+                                        <div
+                                            className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                        >
+                                            <CheckIcon />
+                                            <span className="relative pl-1"> Paid</span>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
+                                        <div className="flex -space-x-1  min-w-max overflow-hidden">
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
                                             />
                                         </div>
-                                        <div className="ml-3 w-max">
-                                            <p className="text-grey-900 font-medium whitespace-no-wrap">
-                                                Basic Plan - Nov 2022
-                                            </p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">Nov 1, 2022</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
-                                    <div
-                                        className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                    </td>
+                                    <td
+                                        className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
                                     >
-                                        <CheckIcon />
-                                        <span className="relative pl-1"> Paid</span>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
-                                    <div className="flex -space-x-1  min-w-max overflow-hidden">
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <div className='rounded-full w-6 h-6 bg-grey ring-2 ring-white inline-block flex items-center justify-center'>
-                                            <span className='text-grey-600 text-sm font-semibold text-center'>+1</span>
+                                        <button
+                                            type="button"
+                                            className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
+                                        >
+                                            <span><Download /></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
+                                        <div className="flex">
+                                            <div className="flex-shrink-0 h-4 w-4">
+                                                <input
+                                                    id="comments"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                                />
+                                            </div>
+                                            <div className="ml-3 w-max">
+                                                <p className="text-grey-900 font-medium whitespace-no-wrap">
+                                                    Basic Plan - Jul 2022
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td
-                                    className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
-                                >
-                                    <button
-                                        type="button"
-                                        className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
-                                    >
-                                        <span><Download /></span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
-                                    <div className="flex">
-                                        <div className="flex-shrink-0 h-4 w-4">
-                                            <input
-                                                id="comments"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                    </td>
+                                    <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">Jul 1, 2022</p>
+                                    </td>
+                                    <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
+                                        <div
+                                            className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                        >
+                                            <CheckIcon />
+                                            <span className="relative pl-1"> Paid</span>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
+                                        <div className="flex -space-x-1  min-w-max overflow-hidden">
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
                                             />
                                         </div>
-                                        <div className="ml-3 w-max">
-                                            <p className="text-grey-900 font-medium whitespace-no-wrap">
-                                                Basic Plan - Oct 2022
-                                            </p>
+                                    </td>
+                                    <td
+                                        className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
+                                    >
+                                        <button
+                                            type="button"
+                                            className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
+                                        >
+                                            <span><Download /></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="px-5 py-5 bg-white hover:bg-gray-50 text-sm">
+                                        <div className="flex">
+                                            <div className="flex-shrink-0 h-4 w-4">
+                                                <input
+                                                    id="comments"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                                />
+                                            </div>
+                                            <div className="ml-3 w-max">
+                                                <p className="text-grey-900 font-medium whitespace-no-wrap">
+                                                    Basic Plan - Jun 2022
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">Oct 1, 2022</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
-                                    <div
-                                        className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
-                                    >
-                                        <CheckIcon />
-                                        <span className="relative pl-1"> Paid</span>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
-                                    <div className="flex -space-x-1  min-w-max overflow-hidden">
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                    </div>
-                                </td>
-                                <td
-                                    className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
-                                >
-                                    <button
-                                        type="button"
-                                        className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
-                                    >
-                                        <span><Download /></span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
-                                    <div className="flex">
-                                        <div className="flex-shrink-0 h-4 w-4">
-                                            <input
-                                                id="comments"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
+                                    </td>
+                                    <td className="px-2 py-5 bg-white text-center hover:bg-gray-50 text-sm ">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
+                                    </td>
+                                    <td className="px-2 py-5 bg-white  text-center hover:bg-gray-50 text-sm">
+                                        <p className="  min-w-max text-grey-500 whitespace-no-wrap">Jun 1, 2022</p>
+                                    </td>
+                                    <td className="px-2 py-5 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
+                                        <div
+                                            className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                        >
+                                            <CheckIcon />
+                                            <span className="relative pl-1"> Paid</span>
+                                        </div>
+                                    </td>
+                                    <td className="px-2 py-5 min-w-max text-center bg-white hover:bg-gray-50 text-sm ">
+                                        <div className="flex -space-x-1  min-w-max overflow-hidden">
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                                                alt=""
                                             />
                                         </div>
-                                        <div className="ml-3 w-max">
-                                            <p className="text-grey-900 font-medium whitespace-no-wrap">
-                                                Basic Plan - Sept 2022
-                                            </p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">Sept 1, 2022</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
-                                    <div
-                                        className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
+                                    </td>
+                                    <td
+                                        className="pr-5 pl-1 py-5 bg-white hover:bg-gray-50 text-sm text-right"
                                     >
-                                        <CheckIcon />
-                                        <span className="relative pl-1"> Paid</span>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
-                                    <div className="flex -space-x-1  min-w-max overflow-hidden">
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                    </div>
-                                </td>
-                                <td
-                                    className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
-                                >
-                                    <button
-                                        type="button"
-                                        className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
-                                    >
-                                        <span><Download /></span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
-                                    <div className="flex">
-                                        <div className="flex-shrink-0 h-4 w-4">
-                                            <input
-                                                id="comments"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
-                                            />
-                                        </div>
-                                        <div className="ml-3 w-max">
-                                            <p className="text-grey-900 font-medium whitespace-no-wrap">
-                                                Basic Plan - Aug 2022
-                                            </p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">Aug 1, 2022</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
-                                    <div
-                                        className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
-                                    >
-                                        <CheckIcon />
-                                        <span className="relative pl-1"> Paid</span>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
-                                    <div className="flex -space-x-1  min-w-max overflow-hidden">
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                    </div>
-                                </td>
-                                <td
-                                    className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
-                                >
-                                    <button
-                                        type="button"
-                                        className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
-                                    >
-                                        <span><Download /></span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="px-5 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm">
-                                    <div className="flex">
-                                        <div className="flex-shrink-0 h-4 w-4">
-                                            <input
-                                                id="comments"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
-                                            />
-                                        </div>
-                                        <div className="ml-3 w-max">
-                                            <p className="text-grey-900 font-medium whitespace-no-wrap">
-                                                Basic Plan - Jul 2022
-                                            </p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 border-b   border-gray-200 bg-white text-center hover:bg-gray-50 text-sm ">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white  text-center hover:bg-gray-50 text-sm">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">Jul 1, 2022</p>
-                                </td>
-                                <td className="px-2 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
-                                    <div
-                                        className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
-                                    >
-                                        <CheckIcon />
-                                        <span className="relative pl-1"> Paid</span>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 min-w-max border-b text-center border-gray-200 bg-white hover:bg-gray-50 text-sm ">
-                                    <div className="flex -space-x-1  min-w-max overflow-hidden">
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                    </div>
-                                </td>
-                                <td
-                                    className="pr-5 pl-1 py-5 border-b  border-gray-200 bg-white hover:bg-gray-50 text-sm text-right"
-                                >
-                                    <button
-                                        type="button"
-                                        className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
-                                    >
-                                        <span><Download /></span>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="px-5 py-5 bg-white hover:bg-gray-50 text-sm">
-                                    <div className="flex">
-                                        <div className="flex-shrink-0 h-4 w-4">
-                                            <input
-                                                id="comments"
-                                                name="comments"
-                                                type="checkbox"
-                                                className="h-4 w-4 mr-2 rounded hover:border-purple-500 hover:bg-purple-30 border-gray-300 text-purple-700 focus:ring-purple-500 checked:accent-purple-500 focus:accent-purple-500  checked:bg-purple-700 focus:border-purple-500 checked:border-purple-700"
-                                            />
-                                        </div>
-                                        <div className="ml-3 w-max">
-                                            <p className="text-grey-900 font-medium whitespace-no-wrap">
-                                                Basic Plan - Jun 2022
-                                            </p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 bg-white text-center hover:bg-gray-50 text-sm ">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">USD $10.00</p>
-                                </td>
-                                <td className="px-2 py-5 bg-white  text-center hover:bg-gray-50 text-sm">
-                                    <p className="  min-w-max text-grey-500 whitespace-no-wrap">Jun 1, 2022</p>
-                                </td>
-                                <td className="px-2 py-5 bg-white hover:bg-gray-50 text-sm flex items-center justify-center ">
-                                    <div
-                                        className="   w-max relative flex items-center justify-center inline-block px-3 py-1 font-semibold text-green-700 leading-tight  bg-green-200/50 rounded-full"
-                                    >
-                                        <CheckIcon />
-                                        <span className="relative pl-1"> Paid</span>
-                                    </div>
-                                </td>
-                                <td className="px-2 py-5 min-w-max text-center bg-white hover:bg-gray-50 text-sm ">
-                                    <div className="flex -space-x-1  min-w-max overflow-hidden">
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                        <img
-                                            className="inline-block h-6 w-6 rounded-full ring-2 ring-white"
-                                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                                            alt=""
-                                        />
-                                    </div>
-                                </td>
-                                <td
-                                    className="pr-5 pl-1 py-5 bg-white hover:bg-gray-50 text-sm text-right"
-                                >
-                                    <button
-                                        type="button"
-                                        className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
-                                    >
-                                        <span><Download /></span>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
+                                        <button
+                                            type="button"
+                                            className="inline-block text-gray-500 hover:text-gray-700 opacity-50"
+                                        >
+                                            <span><Download /></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </>
                     </DefaultTable>
                 </div>
 

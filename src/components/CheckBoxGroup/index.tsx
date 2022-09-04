@@ -1,6 +1,17 @@
 import React, { useState } from 'react'
 
-export default function CheckBoxGroup({ className, image, mainText, subText, }) {
+
+export interface Props {
+    className: string
+    image: string
+    mainText: string
+    subText: string
+}
+
+
+export default function CheckBoxGroup(props:Props) {
+
+    const {className, image, mainText, subText} = props
 
     const [state, setState] = useState(false)
 

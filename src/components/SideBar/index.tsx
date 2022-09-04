@@ -1,5 +1,5 @@
 import React from 'react'
-import './layout.scss'
+import '../Layout/layout.scss'
 import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 import { ReactComponent as Home } from '../../assets/images/icons/home.svg'
 import { ReactComponent as Dashboard } from '../../assets/images/icons/dashboard.svg'
@@ -13,16 +13,24 @@ import SearchInput from '../SearchInput'
 import ActionCard from '../ActionCard'
 import Account from '../AccountCard'
 
+import type { RootState } from '../../redux/store'
+import { useSelector, /*useDispatch*/ } from 'react-redux'
+// import { logout, updateData } from '../../redux/features/products/dataSlice'
+
 const Sidebar = () => {
+
+    const users = useSelector((state: RootState)=> state.userData.user.users)
+
+
     return (
-        <div className='fixed h-screen bg-white font-inter w-[280px] border-solid border-r-[1px] overflow-auto h-full  scrollbar-hide hidden sm:block'>
+        <div className='fixed h-screen bg-white font-inter md:w-[280px] w-full xxs:w-2/3 sm:1/3 border-solid border-r-[1px] overflow-auto h-full scrollbar-hide'>
             <div className='p-6 flex flex-col justify-between h-full'>
                 <div>
                     <div className='py-4 pt-2 px-3'>
                         <Logo />
                     </div>
 
-                    <SearchInput />
+                    <SearchInput users={users} />
 
                     <div className='mt-4'>
                         <ul className='block list-none cursor-pointer p-2 rounded-md hover:bg-grey hover:p-2'>
@@ -95,7 +103,6 @@ const Sidebar = () => {
                     <ActionCard />
 
                     <Account />
-
 
                 </div>
             </div>

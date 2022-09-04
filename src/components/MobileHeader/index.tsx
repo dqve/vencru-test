@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 import { ReactComponent as LogoIcon } from '../../assets/images/logo-icon.svg'
 import { ReactComponent as Menu } from '../../assets/images/icons/hamburger-menu.svg'
 import Sidebar from '../SideBar'

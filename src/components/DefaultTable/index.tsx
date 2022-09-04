@@ -1,6 +1,13 @@
-import React, { Children } from 'react'
+import React, { Children, ReactElement } from 'react'
 
-export default function DefaultTable({ children }) {
+export interface Props {
+    children: ReactElement
+}
+
+export default function DefaultTable(props: Props) {
+
+    const { children } = props
+
     return (
 
         <div
