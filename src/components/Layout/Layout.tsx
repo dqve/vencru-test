@@ -8,7 +8,7 @@ export interface Props {
 
 export default function Layout(props: Props) {
   return (
-    <div id='wrapper' className='bg-grey h-full'>
+    <div id='wrapper' className='bg-grey h-full font-inter'>
                 <div id='sidebar' className='relative max-w-[280px] hidden md:block  h-full'>
                     <Sidebar/>
                 </div>

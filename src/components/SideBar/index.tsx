@@ -14,13 +14,12 @@ import ActionCard from '../ActionCard'
 import Account from '../AccountCard'
 
 import type { RootState } from '../../redux/store'
-import { useSelector, /*useDispatch*/ } from 'react-redux'
-// import { logout, updateData } from '../../redux/features/products/dataSlice'
+import { useSelector} from 'react-redux'
 
 const Sidebar = () => {
 
     const users = useSelector((state: RootState)=> state.userData.user.users)
-
+    const activeUser = useSelector((state: RootState)=> state.userData.user.activeUser)
 
     return (
         <div className='fixed h-screen bg-white font-inter md:w-[280px] w-full xxs:w-2/3 sm:1/3 border-solid border-r-[1px] overflow-auto h-full scrollbar-hide'>
@@ -30,7 +29,7 @@ const Sidebar = () => {
                         <Logo />
                     </div>
 
-                    <SearchInput users={users} />
+                    <SearchInput users={users} activeUser={activeUser}/>
 
                     <div className='mt-4'>
                         <ul className='block list-none cursor-pointer p-2 rounded-md hover:bg-grey hover:p-2'>

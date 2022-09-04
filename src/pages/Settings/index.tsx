@@ -11,15 +11,12 @@ import { ReactComponent as CheckIcon } from '../../assets/images/icons/check-ico
 import DefaultTable from '../../components/DefaultTable'
 
 import type { RootState } from '../../redux/store'
-import { useSelector, useDispatch } from 'react-redux'
-import { logout, updateData } from '../../redux/features/products/dataSlice'
+import { useSelector } from 'react-redux'
 
 
 export default function Settings() {
 
-    const users = useSelector((state: RootState) => state.userData.user.users)
     const history = useSelector((state: RootState) => state.userData.user.history)
-    const dispatch = useDispatch()
 
 
     return (
