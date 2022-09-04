@@ -175,7 +175,7 @@ export default function Settings() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {history?.length < 1 ?
+                                {history?.length > 0 ?
                                     history.map((each, key) =>
 
                                         <tr>
